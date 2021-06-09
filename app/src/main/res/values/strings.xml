@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Firefly</string>
+    <string name="cardView_image_content_description">It is a picture</string>
+    <string name="galleryFrag_start_text">So,\nwhat\'s on your mind today?</string>
+    <string name="storage_permission_dialog">"To be able to download images to your storage, we need this permission"</string>
+    <string name="storage_permission_title">"Storage Permission Required"</string>
+</resources>

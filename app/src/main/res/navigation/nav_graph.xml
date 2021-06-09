@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/randomGalleryFragment">
+    <fragment
+        android:id="@+id/galleryFragment2"
+        android:name="com.example.android.firefly.ui.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment2_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="query"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.android.firefly.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="photo"
+            app:argType="com.example.android.firefly.data.UnsplashPhoto" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomGalleryFragment"
+        android:name="com.example.android.firefly.ui.random.RandomGalleryFragment"
+        android:label="fragment_random_gallery"
+        tools:layout="@layout/fragment_random_gallery" >
+        <action
+            android:id="@+id/action_randomGalleryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_randomGalleryFragment_to_galleryFragment2"
+            app:destination="@id/galleryFragment2" />
+    </fragment>
+</navigation>
