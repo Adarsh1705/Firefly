@@ -12,3 +12,12 @@ A simple image search app in Kotlin.
 - To get the key, visit [Unsplash.com](https://unsplash.com/developers) and get a key.
 - Put the key inside gradle.properties
 
+## Screenshots
+Here are some screenshots, enjoy!! 😊
+
+![app main screen](https://user-images.githubusercontent.com/42678901/121333750-b199dd80-c936-11eb-9b9c-9725caabb9e8.png)
+
+![app search screen](https://user-images.githubusercontent.com/42678901/121333933-ddb55e80-c936-11eb-8d84-14e87b4fb554.png)
+
+![image download](https://user-images.githubusercontent.com/42678901/121333993-ea39b700-c936-11eb-8630-c453332be73d.png)
+
